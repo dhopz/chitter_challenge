@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import Post from '../components/post/post'
+
 
 export default function Home() {
   return (
@@ -18,34 +19,34 @@ export default function Home() {
 
         <ul className={styles.posts}>
           <li>
-            <p className={styles.postsContent}>
-              This is a chitter challenge and the need to put lots of text here to see the container.
-            </p>
-            <p className={styles.postsDate}>
-              20/12/2021
-            </p>
+            <Post 
+            content="hello testing here.." 
+            date="26/12/2021">
+            </Post>
           </li>
           <li>
-            <p className={styles.postsContent}>
-              This is a chitter challenge!
-            </p>
-            <p className={styles.postsDate}>
-              20/12/2021
-            </p>
+            <Post 
+            content="This is a chitter challenge and the need to put lots of text here to see the container." 
+            date="26/12/2021">
+            </Post>            
           </li>
           <li>
-            <p className={styles.postsContent}>
-              This is a chitter challenge!
-            </p>
-            <p className={styles.postsDate}>
-              20/12/2021
-            </p>
+            <Post 
+            content="This is a chitter challenge!"
+            date="20/12/2021">
+            </Post>
+          </li>
+          <li>
+            <Post 
+            content="This is a chitter challenge!"
+            date="20/12/2021">            
+            </Post>
           </li>
         </ul>
 
         <form>
           <textarea className={styles.formContent}></textarea>
-            <button>
+            <button className={styles.formButton}>
               Add New Post
             </button>
           
