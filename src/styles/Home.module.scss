@@ -22,7 +22,9 @@ $primary-colour: #00ADB5;
   list-style: none;
   padding: 0;
 
-  li {
+  .posts > li {
+
+  & > li {
     margin-bottom: 3em;
 
     &:last-child {
@@ -38,7 +40,7 @@ $primary-colour: #00ADB5;
       margin-top: 0;
     }
   }
-}
+}}
 
 
 

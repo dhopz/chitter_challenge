@@ -48,8 +48,7 @@ export default function Home() {
           <textarea className={styles.formContent}></textarea>
             <button className={styles.formButton}>
               Add New Post
-            </button>
-          
+            </button>          
         </form>
 
       </main>
