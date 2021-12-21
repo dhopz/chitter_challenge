@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Post.module.scss'
 
-const post = ({content,date}) => {
+const Post = ({content,date}) => {
     return (
         <>
         <p className={styles.postsContent}>
@@ -14,5 +14,5 @@ const post = ({content,date}) => {
     )
 }
 
-export default post
+export default Post
   
