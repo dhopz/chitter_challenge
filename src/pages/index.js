@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import Post from '../components/post/post'
+import Bio from '../components/Bio/Bio'
 
 
 export default function Home() {
@@ -13,9 +14,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          My Posts
-        </h1>
+      <Bio
+        headshot="https://pbs.twimg.com/profile_images/464741577923915776/MqkSoHaF_400x400.jpeg"
+        name="Person Name"
+        tagline="Learning how to make things!"
+        role="Student@Makers"
+      />
 
         <ul className={styles.posts}>
           <li>

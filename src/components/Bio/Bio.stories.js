@@ -7,7 +7,12 @@ export default {
 };
 
 const Template = () => {
-  return <Bio/>
+  return <Bio
+      headshot="https://pbs.twimg.com/profile_images/464741577923915776/MqkSoHaF_400x400.jpeg"
+      name="Person Name"
+      tagline="Learning how to make things!"
+      role="Student@Makers"
+    />
 }
 
 export const Default = Template.bind({});

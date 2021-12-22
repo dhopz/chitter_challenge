@@ -1,7 +1,12 @@
 $primary-colour: #00ADB5;
 
 .container {
-  padding: 0 2rem;
+  padding: 0 0.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
@@ -18,7 +23,7 @@ $primary-colour: #00ADB5;
 }
 
 .posts{
-  margin: 5em;
+  margin: 5em 0;
   list-style: none;
   padding: 0;
 
@@ -41,8 +46,6 @@ $primary-colour: #00ADB5;
     }
   }
 }}
-
-
 
 .formContent{
   width: 100%;

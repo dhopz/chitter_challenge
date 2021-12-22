@@ -1,15 +1,23 @@
 .bio{
-
+    display: flex;
 }
 
 .bioImage{
-    
-    border-radius: 50%;
+
+    margin-right: 3em;
+
+    img{
+        border-radius: 50%;
+        height: auto;
+        width: 16em;
+    }
 
 }
 
 .bioContent{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bioContentName{
@@ -17,12 +25,15 @@
     font-size: 52px;
     line-height: 65px;
     color: #00ADB5;
+    margin: 0;
 }
 
 .bioContentTagline{
     font-size: 37px;
     line-height: 47px;
     color: #414141;
+    margin-top: .2em;
+    margin-bottom: .4em;
 }
 
 .bioContentRole{
@@ -30,5 +41,6 @@
     font-size: 29px;
     line-height: 36px;
     color: #414141;
+    margin: 0;
 
 }
