@@ -42,8 +42,7 @@ const Header = () => {
   // });
 
   return (
-      <ThemeProvider>
-        <div className={classes.root}>
+      
         <AppBar color= "transparent" position="static">
             <Container>
                 <Toolbar>
@@ -54,8 +53,7 @@ const Header = () => {
                 </Toolbar>
             </Container>
         </AppBar>
-        </div>
-    </ThemeProvider>
+        
   );
 }
 

@@ -9,7 +9,13 @@ const Signup = ({handleClose}) => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [confirmPassword, setconfirmPassword] = useState("")
-    const {setAlert} = ChitterState();
+    //const {setAlert} = ChitterState();
+
+    const [alert, setAlert] = useState({
+      open:false,
+      message:"",
+      type:"success"
+    })
 
     const handleSubmit = async () => {
         if (password !== confirmPassword) {

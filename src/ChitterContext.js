@@ -25,13 +25,13 @@ const ChitterContext = ({children}) => {
       }, []);   
 
     return (
-        <Crypto.Provider value={{
+        <Chitter.Provider value={{
         alert,
         setAlert,
         user        
         }}>
             {children}
-        </Crypto.Provider>
+        </Chitter.Provider>
     )
 }
 

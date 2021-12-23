@@ -6,9 +6,15 @@ import { ChitterState } from '../../ChitterContext'
 
 const Login = ({handleClose}) => {
 
+    const [alert, setAlert] = useState({
+      open:false,
+      message:"",
+      type:"success"
+    })
+
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    const { setAlert } =ChitterState()
+    //const { setAlert } = ChitterState()
     const auth = getAuth();
     
     const handleSubmit = async () => {
